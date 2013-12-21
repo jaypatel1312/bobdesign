@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/style.css" type="text/css" rel="stylesheet"  />		
+		<link href="css/webfonts/stylesheet.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" language="javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" language="javascript" src="js/script.js"></script>
+        <script type="text/javascript" language="javascript" src="js/validate.js"></script>
+		<title>Contact Us</title>
+	</head>
+
+	<body>
+    
+		<!-- Header -->
+		
+		<div id="header">
+			<div class="centralpos">
+				<a href="index.html" title="The Bakos Agency, Inc."><img src="images/logo.png" alt="Bakos Agency" class="logo" /></a>
+				<ul>
+					<li class="insetlines" title="About Us"><a href="aboutus.html">About Us</a></li>
+					<li class="insetlines" title="Contact Us"><a href="contactus.html">Contact Us</a></li>
+					<li><a href="companies.html" title="Companies">Companies</a></li>
+					<li><a href="#" title="Call Us 717-668-5700" class="callus"><span style="margin-left:30px;">716-668-5700</span></a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <div class="contactPage">
+            <div class="content">
+                <div class="contactInfo">
+                    <h1>Contact Us</h1>
+					<div class="sidebar">
+                    	<h2>Our Address</h2>
+                        <pre>
+1099 French Rd.
+Cheektowaga, NY 14227
+Phone:  (716) 668-5700
+Fax : (716) 668-5840
+						</pre>
+                        <div class="contactlink">
+                        	<h2>Our Agents : </h2>
+                            <ul>
+                            	<li><a href="mailto:AnnWagner@bakosagency.com">AnnWagner@bakosagency.com</a></li>
+                                <li><a href="mailto:JulieWagner@bakosagency.com">JulieWagner@bakosagency.com</a></li>
+                                <li><a href="mailto:PattyGrimm@bakosagency.com">PattyGrimm@bakosagency.com</a></li>
+                                <li><a href="mailto:ChristineGluc@bakosagency.com">ChristineGluc@bakosagency.com</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <form name="formdetail" action="contactus.php" method="post" onsubmit="return validateForm();">
+                        <div class="contactForm">
+                            <div class="field">
+                                <div class="label">First Name:</div>
+                                <input type="text" name="first_name" alt="First Name" />
+                            </div>
+                            <div class="field">
+                                <div class="label">Last Name:</div>
+                                <input type="text" name="last_name" alt="Last Name" />
+                            </div>
+                            <div class="field">
+                                <div class="label">Title:</div>
+                                <input type="text" name="title" alt="Title" />
+                            </div>
+                            <div class="field">
+                                <div class="label">Organization:</div>
+                                <input type="text" name="organization" alt="Organization" />
+                            </div>
+                            <div class="field">
+                                <div class="label">Work Phone:</div>
+                                <input type="text" name="wPhone" style="width:120px;"  alt="Work Phone" class="numeric" onkeypress="return isNumberKey(event)" />
+                            </div>
+                            <div class="field">
+                                <div class="label">Fax:</div>
+                                <input type="text" name="fax" style="width:120px;" alt="Fax" class="numeric" onkeypress="return isNumberKey(event)" />
+                            </div>
+                            <div class="field">
+                                <div class="label">Home Phone:</div>
+                                <input type="text" name="hPhone"  style="width:120px;" alt="Home Phone" class="numeric" onkeypress="return isNumberKey(event)" />
+                            </div>
+                            <div class="field">
+                                <div class="label">E-mail:</div>
+                                <input type="text" name="email" class="email" alt="E-mail" />
+                            </div>
+                            
+                            <p>The Bakos Agency Inc. always welcomes your questions and comments.</p>
+                            
+                            <div class="field">
+                                <textarea name="comments" class="comments" rows="5" cols="0"></textarea>
+                            </div>
+                            
+                            <div class="field1">
+                                <input type="checkbox" name="chkbox" />Please check this box if you would like to be added to our mailing list. 
+    You will receive information about our products and services as well as information about special sales that take place.
+                            </div>
+                            
+                            <div class="btnfield">
+                                <input type="submit" value="Submit"  />
+                                <input type="button" value="Reset" onclick="resetForm()"/>
+                            </div>
+                            
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+        
+	   	<!-- Footer -->
+		
+		<div id="footerpart">		
+        	<div id="footer">
+            	<div class="copyright">1099 French Road  Cheektowaga, NY</div>
+                <div class="footerMenu">
+                	<ul>
+                    	<li><a href="index.html" title="Home">Home</a>|</li>
+                    	<li><a href="insurance.html#homeowner" title="Homeowners">Homeowners</a>|</li>
+                        <li><a href="insurance.html#auto" title="Auto">Auto</a>|</li>
+                        <li><a href="insurance.html#business" title="Business">Business</a>|</li>
+                        <li><a href="insurance.html#life" title="Life">Life</a>|</li>
+                        <li><a href="aboutus.html" title="About Us">About Us</a>|</li>
+                        <li><a href="contactus.html" title="Contact Us">Contact Us</a>|</li>
+                        <li><a href="companies.html" title="Companies">Companies</a>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+	</body>
+	
+</html>

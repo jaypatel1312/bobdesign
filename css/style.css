@@ -1,0 +1,818 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body
+{
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+	height:100%;
+
+}
+a
+{
+		color:#5ca8c4;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#039;
+}
+img
+{
+	border:0px;
+}
+
+#header
+{
+	background-image:url(../images/menu_bg.gif);
+	background-repeat:repeat-x;
+	height:43px;
+	width:100%;
+	float:left;
+	position:relative;
+	z-index:2;
+}
+.logo
+{
+	margin-left:100px;	
+}
+.centralpos
+{
+	width:1000px;
+	margin:auto;
+}
+.insetlines
+{
+	border-right:1px inset #4a88a0;
+}
+.center
+{
+	width:100%;
+	background:url(../images/bg_banner.jpg) repeat-x;
+	background-color:#fff;
+	float:left;
+	position:relative;
+	z-index:1;
+}
+
+/* Menu area */
+
+#header ul 
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;	
+	float:right;
+}
+
+#header ul li
+{
+	float:left;
+	padding:13px 15px 0 15px;
+	height:27px;
+}
+
+#header ul li:last-child
+{
+	margin-right:80px;	
+	margin-left:20px;
+}
+
+#header ul li:last-child a
+{
+	font-size:18px;
+}
+
+#header ul li a
+{
+	font-family: 'MyriadProSemibold';
+	color:#fff;
+	text-decoration:none;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	
+}
+
+#header ul li a:hover
+{
+	
+	color:#FFC;
+	
+	
+}
+
+
+.info
+{	
+	height:420px;
+	background:url(../images/bg_banner.jpg) repeat-x;
+	background-color:#fff;
+
+}
+
+.overview
+{
+	float:left;
+	width:415px;
+	margin:80px 0 10px 50px;	
+}
+.overview h1
+{
+	font-family: 'MyriadProCondensed';
+	float:left;
+	font-size:36px;
+	color:#484848;
+}
+
+.overview p
+{
+	font-family: Arial, Helvetica, sans-serif;
+	float:left;	
+	line-height:20px;
+	width:415px;
+	margin-top:-25px;
+}
+
+.overview ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;	
+}
+
+.overview ul li
+{
+	list-style:none;
+	float:left;
+	height:97px;
+	width:97px;	
+	cursor:pointer;
+	color:#19770d;
+	text-align:center;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.highlight
+{
+	color:#0a7da6;	
+}
+
+.option
+{
+	float:left;
+	background:url(../images/banner.jpg) no-repeat;
+	height:420px;
+	width:533px;
+	background-color:#fff;	
+}
+
+.btnGroup
+{
+	margin:170px 0 0 130px;	
+}
+
+.btnAuto,.btnHomeowner,.btnPay
+{
+	width:292px;
+	margin-top:5px;
+	float:left;
+	cursor:pointer;
+}
+
+.lbtn
+{
+	background:url(../images/lside_lbtn.png) no-repeat;
+	height:46px;
+	width:60px;	
+	float:left;
+}
+
+.lbtn2
+{
+	background:url(../images/btn_homeowner.png) no-repeat;
+	height:46px;
+	width:60px;	
+	float:left;
+}
+
+.lbtn3
+{
+	background:url(../images/btn_payonline.png) no-repeat;
+	height:46px;
+	width:60px;	
+	float:left;
+}
+
+.cbtn
+{
+	font-family: 'MyriadProCondensed';
+	background:url(../images/cside_btn.png) repeat-x;
+	height:36px;
+	width:220px;
+	float:left;
+	color:#fff;
+	padding-top:10px;
+	font-size:18px;
+}
+
+.rbtn
+{
+	background:url(../images/rside_lbtn.png) no-repeat;
+	height:45px;
+	width:12px;
+	float:left;
+}
+
+.offers
+{
+	background:#fff;
+	height:300px;
+	width:1000px;
+	margin:auto;
+}
+
+.newInfo
+{
+	float:left;
+	width:420px;
+	margin:0 0 30px 50px;
+	border-right:3px solid #b2b2b2;
+	height:100%;
+}
+
+.newInfo h1
+{
+	font-family: 'MyriadProCondensed';
+	font-size:36px;
+	margin-top:0px;
+}
+
+.newInfo p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:20px;
+	width:380px;
+}
+
+
+.advertise
+{
+	float:left;
+	width:490px;
+	margin:0px 0 0 10px;	
+}
+
+.advertise h1
+{
+	font-family: 'MyriadProCondensed';
+	font-size:29px;
+	margin-top:0px;
+	color:#af0000;	
+}
+
+.advertise h3
+{
+	font-size:20px;	
+	margin-top:-15px;
+	margin-left:25px;
+}
+
+.advertise ul 
+{
+	margin:0;
+	padding:0;	
+	float:left;
+	width:250px;
+	margin-left:10px;
+}
+
+.advertise ul li
+{
+
+	list-style-position:outside;
+	list-style-image:url(../images/bullet.gif);
+
+	line-height:18px;
+	margin-top:10px;
+	margin-left:5px;
+	font-size:12px;
+	
+}
+
+.register
+{
+	float:left;
+	cursor:pointer;
+	width:172px;
+	margin:20px 0 0 10px;
+	height:48px;
+}
+
+.lsbtn
+{
+	background:url(../images/lbtn_small.png) no-repeat;	
+	width:10px;
+	height:50px;
+	float:left;
+}
+
+.csbtn
+{
+	font-family: 'MyriadProSemibold';
+	background:url(../images/cbtn_small.png) repeat-x;
+	color:#fff;
+	width:130px;
+	height:34px;
+	float:left;	
+	padding-top:10px;
+	padding-left:20px;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.rsbtn
+{
+	background:url(../images/rbtn_small.png) no-repeat;
+	height:45px;
+	width:12px;
+	float:left;
+}
+#footerpart
+{
+	position:fixed;
+	z-index:10;
+	bottom:0px;
+	width:100%;	
+	background:url(../images/footer_bg.jpg) repeat-x;
+	height:70px;
+	float:left;
+}
+
+.footer
+{
+	width:100%;	
+	background:url(../images/footer_bg.jpg) repeat-x;
+	height:70px;
+	float:left;
+}
+
+#footer
+{
+	width:1000px;
+	background:url(../images/footer_bg.jpg) repeat-x;
+	height:70px;
+	margin:auto;
+}
+
+.copyright
+{
+	width:250px;	
+	margin:29px 0 0 50px;
+	float:left;
+	padding-left:50px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.footerMenu ul
+{
+	list-style:none;
+	margin:25px 0 0 50px;
+	padding:0px;
+	float:left;
+	width:600px;	
+}
+
+.footerMenu ul li
+{
+	list-style:none;
+	float:left;	
+	margin:0 10px 0 0;
+	font-size:16px;
+}
+
+.footerMenu ul li a
+{
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+	margin-right:10px;
+}
+.footerMenu ul li a:hover
+{
+	color:#069;
+
+}
+.callus
+{
+	background-image:url(../images/callicon.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+
+}
+/*  About Us CSS */
+
+.centerPage
+{
+	
+	width:100%;	
+	height:550px;
+}
+
+.content
+{
+	width:1000px;
+	margin:auto;
+}
+
+.aboutusInfo
+{
+	float:left;
+	width:500px;
+	margin:80px 0 10px 50px;	
+	height:400px;	
+}
+
+.aboutusInfo h1
+{
+	font-family: 'MyriadProCondensed';
+	font-size:36px;
+	color:#484848;	
+	font-weight:normal;
+}
+
+.aboutusInfo h2
+{
+	font-family: 'MyriadProCondensed';
+	font-size:29px;
+	color:#484848;	
+	margin-top:-20px;
+	font-weight:normal;
+}
+
+.aboutusInfo p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:20px;
+	text-align:justify;	
+	font-weight:500;
+}
+
+.aboutImage
+{
+	float:left;
+	width:430px;
+	height:550px;	
+}
+
+.aboutImage img
+{
+	margin:100px 0 0 30px;	
+}
+
+/*  Insurance */
+
+.insurancePage
+{
+	background:#ebecdf;
+	width:100%;	
+	float:left;
+}
+
+.insuranceInfo
+{
+	width:900px;
+	margin:100px 50px 0 50px;	
+	float:left;
+}
+
+.insuranceInfo h1
+{
+	font-family: 'MyriadProCondensed';
+	font-size:36px;
+	color:#484848;	
+	font-weight:normal;
+}
+
+.insuranceInfo h2
+{
+	font-family: 'MyriadProSemibold';
+	font-size:30px;
+	color:#484848;	
+	font-weight:normal;
+}
+
+.insuranceInfo p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:20px;	
+	color:#484848;	
+	margin-top:-20px;
+	font-weight:500;
+	float:left;
+}
+
+.line
+{
+	width:900px;
+	color:#484848;
+	float:left;
+	border:1px inset #ebecdf;
+	margin:15px auto;
+}
+
+.insuranceBtn
+{
+	width:100%;
+	float:left;	
+}
+
+/* Company Info */
+
+.companyPage
+{
+	background:#ebecdf;
+	width:100%;	
+	float:left;
+
+}
+
+.companyInfo
+{
+	width:950px;
+	margin:100px 25px 0 25px;	
+	float:left;
+}
+
+.companyInfo h1
+{
+	font-family: 'MyriadProCondensed';
+	font-size:36px;
+	color:#484848;	
+	font-weight:normal;
+}
+
+.companyInfo p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:20px;	
+	color:#484848;	
+	margin-top:-20px;
+	font-weight:500;
+	float:left;
+}
+
+.companyBlock
+{
+	float:left;
+	width:950px;	
+	border-top:1px solid #000;
+	margin:0px 25px 0 25px;	
+}
+
+.companyLogo
+{
+	float:left;
+	width:250px;	
+}
+
+.companyLogo img
+{
+	margin:30px 0 30px 0;	
+}
+
+.companyDetail
+{
+	float:left;
+	width:700px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:20px;	
+	color:#484848;	
+	font-weight:500;	
+	text-align:justify;
+}
+
+/*  Contact */
+
+.contactPage
+{
+	background:#ebecdf;
+	width:100%;	
+	float:left;
+	padding-bottom:20px;
+}
+
+.contactInfo
+{
+	width:900px;
+	margin:100px 50px 0 50px;	
+	float:left;
+}
+
+.contactInfo h1
+{
+	font-family: 'MyriadProCondensed';
+	font-size:36px;
+	color:#484848;	
+	font-weight:normal;
+}
+
+.contactInfo h2,.contactlink h2
+{
+	font-family: 'MyriadProCondensed';
+	font-size:30px;
+	color:#484848;	
+	font-weight:normal;
+}
+
+.contactInfo pre
+{
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:-5px;
+	font-weight:500;
+	line-height:20px;	
+}
+
+.sidebar
+{
+	float:left;
+	width:300px;
+	margin:-20px 0 0 0;
+}
+
+.contactlink ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;	
+}
+
+.contactlink ul li
+{
+	margin:20px auto;
+	padding:0px;
+	height:20px;
+	color:#229bb1;
+	list-style:none;
+}
+
+.contactForm
+{
+	float:left;	
+	width:500px;
+	margin:-55px 0 0 0;
+	height:auto;
+	border-left:1px solid #000;
+	padding-left:80px;
+}
+
+.field
+{
+	float:left;
+	width:600px;	
+	margin:5px auto;
+}
+
+.label
+{
+	width:130px;
+	float:left;	
+}
+
+.contactForm p
+{
+	margin:10px auto;	
+}
+
+.field input[type="text"]
+{
+	float:left;	
+	width:220px;	
+}
+
+.comments
+{
+	width:430px;
+	height:130px;	
+	margin:10px auto;
+	float:left;
+}
+
+.contactForm input[type="checkbox"]
+{
+	float:left;	
+}
+
+.field1
+{
+	float:left;
+	width:500px;
+	line-height:20px;	
+	text-indent:10px;
+}
+
+.btnfield
+{
+	float:left;
+	margin:20px 0 0 250px;	
+}
+
+.btnfield input[type="button"],.btnfield input[type="submit"]
+{
+	margin-left:20px;
+	background:url(../images/bg_btn.jpg) repeat-x;
+	height:22px;
+	border-radius:4px;	
+	border:1px solid #9a998f;
+}
+
+/*  Cut Up page */
+
+.cutupPage
+{
+	background:#ebecdf;
+	width:100%;	
+	float:left;
+}
+
+.cutupForm
+{
+	width:900px;
+	margin:100px 50px 0 50px;	
+	float:left;
+}
+
+.cutupForm h3
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#484848;	
+	font-weight:bold;
+	border-bottom:1px solid #000;
+}
+
+.cutupForm h4
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#484848;	
+	font-weight:bold;
+	border-bottom:1px solid #535352;
+}
+
+.cutupForm p
+{
+	margin-top:-10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.fields
+{
+	width:100%;
+
+	margin:4px auto;	
+	margin-left:60px;
+}
+
+.fields input[type="text"]
+{
+	margin-left:4px;
+	width:200px;
+}
+
+.fields textarea
+{
+	width:330px;
+	height:70px;	
+	margin:4px auto;
+}
+
+.btnfield1
+{
+	float:left;
+	margin:20px 0 20px 320px;	
+}
+
+.btnfield1 input[type="button"],.btnfield1 input[type="submit"]
+{
+	margin-left:30px;
+	background:url(../images/bg_btn.jpg) repeat-x;
+	height:22px;
+	border-radius:4px;	
+	border:1px solid #9a998f;
+}
+
+.thanks
+{
+	margin:70px 0 0 10px;
+	font-family: 'MyriadProCondensed';
+	font-size:24px;
+	color:#666;
+	letter-spacing:2px;
+	text-align:center;	
+}

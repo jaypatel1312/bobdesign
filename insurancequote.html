@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/style.css" type="text/css" rel="stylesheet"  />		
+		<link href="css/webfonts/stylesheet.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" language="javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" language="javascript" src="js/script.js"></script>
+        <script type="text/javascript" language="javascript" src="js/validate.js"></script>
+		<title>Homeowner Questions</title>
+	</head>
+
+	<body>
+    
+		<!-- Header -->
+		
+		<div id="header">
+			<div class="centralpos">
+				<a href="index.html" title="The Bakos Agency, Inc."><img src="images/logo.png" alt="Bakos Agency" class="logo" /></a>
+				<ul>
+					<li class="insetlines" title="About Us"><a href="aboutus.html">About Us</a></li>
+					<li class="insetlines" title="Contact Us"><a href="contactus.html">Contact Us</a></li>
+					<li><a href="companies.html" title="Companies">Companies</a></li>
+					<li><a href="#" title="Call Us 717-668-5700" class="callus"><span style="margin-left:30px;">716-668-5700</span></a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <div class="cutupPage">
+            <div class="content">
+                <div class="cutupForm">
+                    <h3>Bakos Agency Homeowners Insurance Quote: </h3>
+                    <p>Please fill out teh form below with all the information. All information is required to give an accurate quote. If you cannot answer something please leave it blank, or contact one of our agents to help you. This site is safe and secure for passing personal information.
+					</p>
+					<form name="formdetail" action="insurancequote.php" method="post" onsubmit="return validateForm();">
+                        <div class="fields">    
+                        	<div class="label">Name </div> <input type="text" name="name" alt="name" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Address</div>  <input type="text" name="address" alt="Address" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">City</div>  <input type="text" name="city" alt="City" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">State</div>  <input type="text" name="state" alt="State" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Phone</div>  <input type="text" name="phone" alt="Phone" class="numeric" onkeypress="return isNumberKey(event)"/>
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">E-mail address</div> <input type="text" name="email" class="email" alt="Email Address" />
+						</div> 
+                                             
+                        <h3>Address of Property</h3>
+                        
+                         <div class="fields">    
+                        	<div class="label">Address</div>  <input type="text" name="property_add"  alt="Address of Property"/>
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">city</div> <input type="text" name="property_city" alt="City of property" />
+                            State  <input type="text" name="property_state" style="width:100px;" alt="State of Property"/>
+                            Zip  <input type="text" name="property_zip" style="width:80px;" class="numeric" alt="Property Zip code" />
+						</div>     
+                        
+                        <h3> Current Coverage</h3>
+                                  
+                        <div class="fields">    
+                        	<div class="label">Dwelling </div>: <input type="text" name="Dwelling" alt="Dwelling" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Liability </div>: <input type="text" name="Liability"  alt="Liability" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Other Structures</div>: <input type="text" name="Structures" alt="Structures" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Medical Payments</div>:  <input type="text" name="Medical_Payments" alt="Medical Payments" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Personal Property</div>: <input type="text" name="Personal_Property" alt="Personal Property" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Loss of use</div>:  <input type="text" name="Loss_of_use" alt="Loss of use" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Deductible Desired</div>: <input type="text" name="Deductible_Desired" alt="Deductible Desired" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Year Constructed</div>: <input type="text" name="Year_Constructed" alt="Year Constructed" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Number of Family</div>:  <input type="text" class="numeric" name="Num_Family" alt="Number of Family" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Construction Type</div>: <input type="text" name="Construction_type" alt="Construction Type"/>
+						</div>                         
+                        <div class="fields">
+                             <input type="radio" name="frame" alt="Please Select Frame, Stone, Masonry, Veneer" value="Frame" />Frame
+                             <input type="radio" name="frame" alt="Please Select Frame, Stone, Masonry, Veneer" value="Stome" />Stone
+                             <input type="radio" name="frame" alt="Please Select Frame, Stone, Masonry, Veneer" value="Masonry" />Masonry
+                             <input type="radio" name="frame" alt="Please Select Frame, Stone, Masonry, Veneer" value="Veneer" />Veneer
+                        </div>
+                        
+                        <h3>Questions:</h3>
+                        
+                        <div class="fields">
+                        	Any other structures, like a garage, or storage building on premise?
+                            <input type="radio" name="structure" alt="Any other structures, like a garage, or storage building on premise? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="structure" alt="Any other structures, like a garage, or storage building on premise? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Any insurance discontinued in the last 3 years?
+                            <input type="radio" name="discontinue" alt="Any insurance discontinued in the last 3 years? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="discontinue" alt="Any insurance discontinued in the last 3 years? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Are there any other non-central heating devices in use?
+                            <input type="radio" name="device" alt="Are there any other non-central heating devices in use? Please choose!" value"Yes" />Yes
+                            <input type="radio" name="device" alt="Are there any other non-central heating devices in use? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Any other insurance with us?
+                            <input type="radio" name="insurance" alt="Any other insurance with us? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="insurance" alt="Any other insurance with us? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Is their a swimming pool on premise? 
+                            <input type="radio" name="pool" alt="Is their a swimming pool on premise? Please choose!" value-"Yes" />Yes
+                            <input type="radio" name="pool" alt="Is their a swimming pool on premise? Please choose!" value="No" />No
+                        </div>
+      	
+        				<div class="fields">
+                        	Any animals on premise?
+                            <input type="radio" name="animal" alt="Any animals on premise? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="animal" alt="Any animals on premise? Please choose!" value"No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	When was the last update for your electrical system?
+                            <input type="radio" name="fuse" alt="When was the last update for your electrical system? Please choose Breeaker or Fuse" value="Breeaker" />Breeaker
+                            <input type="radio" name="fuse" alt="When was the last update for your electrical system? Please choose Breeaker or Fuse" value="Fuse" />Fuse
+                        </div>
+                        
+                        <div class="fields">
+                        	When was the last update for your plumbing system?
+                            <input type="radio" name="Pipe" alt="When was the last update for your plumbing system? Pipe or PVC?" value="Pipe" />Pipe
+                            <input type="radio" name="Pipe" alt="When was the last update for your plumbing system? Pipe or PVC?" value="PVC" />PVC
+                        </div>
+                        
+                        <div class="fields">
+                        	What was the year of the last roof work?   <input type="text" name="roofwork" alt="Last Roof Work" /><br />
+                            <input type="radio" name="roof" alt="What was the year of the last roof work? Please choose!" value="Shingle" />Shingle
+                            <input type="radio" name="roof" alt="What was the year of the last roof work? Please choose!" value="Rubber" />Rubber
+                            <input type="radio" name="roof" alt="What was the year of the last roof work? Please choose!" value="Metal" />Metal
+                            <input type="radio" name="roof" alt="What was the year of the last roof work? Please choose!" value="Rolled Roof (Tarpaper)" />Rolled Roof (Tarpaper)
+                        </div>
+                        
+                        <div class="fields">
+                        	When was the last update for your heating system?   
+                            <input type="text" name="heating_sys" alt="last update for your heating system" />
+                        </div>
+                        
+                        <div class="fields">
+                        	Cleaned or Maintained once a year?
+                            <input type="radio" name="clean" alt="Cleaned or Maintained once a year? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="clean" alt="Cleaned or Maintained once a year? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Any claims in the last 5 years?
+                            <input type="radio" name="claim" alt="Any claims in the last 5 years? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="claim" alt="Any claims in the last 5 years? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Who is your responding Fire Deaprtment? 
+                            <input type="text" name="fire_dept" alt="your responding Fire Deaprtment" />
+                        </div>
+                        
+                        <div class="fields">
+                        	Is this home a townhouse?
+                            <input type="radio" name="townhouse" alt="Is this home a townhouse? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="townhouse" alt="Is this home a townhouse? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	Are their smoke alarms in the home?
+                            <input type="radio" name="smolealarm" alt="Are their smoke alarms in the home? Please choose!" value="Yes" />Yes
+                            <input type="radio" name="smolealarm" alt="Are their smoke alarms in the home? Please choose!" value="No" />No
+                        </div>
+                        
+                        <div class="fields">
+                        	How many? 
+                            <input type="text" name="how_many" alt="how many"/>
+                        </div>
+                        
+                        <div class="fields">
+                        	Do you own any recreational vechiles, like a snowmobile or a boat? 
+                            <input type="radio" name="vechiles" alt="Do you own any recreational vechiles, like a snowmobile or a boat? Please choose" value="Yes" />Yes
+                            <input type="radio" name="vechiles" alt="Do you own any recreational vechiles, like a snowmobile or a boat? Please choose" value="No" />No
+                        </div>
+                                         
+                        <div class="fields">
+                        	Additional Comments<br />
+                        	<textarea name="additional_cmt" class="Additional Comments" rows="5" cols="0"></textarea>
+                        </div>
+                        
+                        <div class="btnfield1">
+                            <input type="submit" value="Submit Form"  />
+                            <input type="button" value="Reset Form" onclick="resetForm()" />
+                        </div>
+                        
+                        
+                     </form>
+                </div>
+            </div>
+        </div>
+        
+	   	<!-- Footer -->
+		
+		<div class="footer">		
+        	<div id="footer">
+            	<div class="copyright">1099 French Road  Cheektowaga, NY</div>
+                <div class="footerMenu">
+                	<ul>
+                    	<li><a href="index.html" title="Home">Home</a>|</li>
+                    	<li><a href="insurance.html#homeowner" title="Homeowners">Homeowners</a>|</li>
+                        <li><a href="insurance.html#auto" title="Auto">Auto</a>|</li>
+                        <li><a href="insurance.html#business" title="Business">Business</a>|</li>
+                        <li><a href="insurance.html#life" title="Life">Life</a>|</li>
+                        <li><a href="aboutus.html" title="About Us">About Us</a>|</li>
+                        <li><a href="contactus.html" title="Contact Us">Contact Us</a>|</li>
+                        <li><a href="companies.html" title="Companies">Companies</a>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+	</body>
+	
+</html>

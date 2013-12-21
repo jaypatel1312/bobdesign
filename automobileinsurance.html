@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/style.css" type="text/css" rel="stylesheet"  />		
+		<link href="css/webfonts/stylesheet.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" language="javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" language="javascript" src="js/script.js"></script>
+        <script type="text/javascript" language="javascript" src="js/validate.js"></script>
+		<title>Bakos Agency Automobile Quote</title>
+	</head>
+
+	<body>
+    
+		<!-- Header -->
+		
+		<div id="header">
+			<div class="centralpos">
+				<a href="index.html" title="The Bakos Agency, Inc."><img src="images/logo.png" alt="Bakos Agency" class="logo" /></a>
+				<ul>
+					<li class="insetlines" title="About Us"><a href="aboutus.html">About Us</a></li>
+					<li class="insetlines" title="Contact Us"><a href="contactus.html">Contact Us</a></li>
+					<li><a href="companies.html" title="Companies">Companies</a></li>
+					<li><a href="#" title="Call Us 717-668-5700" class="callus"><span style="margin-left:30px;">716-668-5700</span></a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <div class="cutupPage">
+            <div class="content">
+                <div class="cutupForm">
+                    <h3>Bakos Agency Automobile Quote: </h3>
+                    <p>Please fill out teh form below with all the information. All information is required to give an accurate quote. If you cannot answer something please leave it blank, or contact one of our agents to help you. This site is safe and secure for passing personal information.
+					</p>
+					<form name="formdetail" action="automobileinsurance.php" method="post" onsubmit="return validateForm();">
+                        <div class="fields">    
+                        	<div class="label">Name</div>  <input type="text" name="name"  alt="Name" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Address</div>  <input type="text" name="address" alt="Address" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">City</div>  <input type="text" name="city" alt="City" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">State</div>  <input type="text" name="state" alt="State" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Phone</div>  <input type="text" name="phone" alt="Phone" class="numeric" onkeypress="return isNumberKey(event)"/>
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">E-mail address</div> <input type="text" name="email" class="email" alt="Email Address" />
+						</div> 
+                        <div class="fields">
+                        	<div class="label">Maritial Status</div><input type="radio" name="marital" alt="Please Specify Maritial Status" value="Single" />Single
+                            <input type="radio" name="marital" alt="Please Specify Maritial Status" value="Married" />Married
+                        </div>                        
+                        
+                        <h4>Driver Information</h4>
+                        
+                         <div class="fields">    
+                        	<div class="label">Date of Birth</div>  <input type="text" name="dob" alt="Date of Birth" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">License Number</div>  <input type="text" name="license"  alt="License Number" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Occupation</div> <input type="text" name="occupation" alt="Occupation" />
+						</div>                         
+                        
+                        <div class="fields">
+                             Any of the above driver(s), had recieved a ticket in the last 39 months? 
+                             <input type="radio" id="ticket1" name="ticket" value="Yes" alt="Any of the above driver(s), had recieved a ticket? Please Choose!" onchange="validatequick('ticket')" />Yes
+                             <input type="radio" id="ticket2" name="ticket" value="No" alt="Any of the above driver(s), had recieved a ticket? Please Choose!" onchange="validatequick('ticket')"/>No
+                        </div>
+                        
+                        <div class="fields">
+                        	<br />If yes - Name, Date, Description:<br />
+                            <textarea name="ticketyes" rows="5" cols="0"  id="ticketyes" class="Name Date Description"></textarea>
+                        </div>
+                        
+                         <div class="fields">
+                             Any of the above driver(s), got arrested for DWI? 
+                             <input type="radio"  id="driver1" name="driver" value="Yes" alt="Any of the above driver(s), got arrested for DWI? Please Choose!" onchange="validatequick('driver')"/>Yes
+                             <input type="radio" id="driver2" name="driver" value="No" alt="Any of the above driver(s), got arrested for DWI? Please Choose!" onchange="validatequick('driver')"/>No
+                        </div>
+                        
+                        <div class="fields">
+                        	<br />If yes - Name, Date, Description:<br />
+                            <textarea name="driveryes" rows="5" cols="0" id="driveryes" class="Name Date Description"></textarea>
+                        </div>
+                        
+                        <div class="fields">
+                             Any of the above driver(s), have or had a prior 6 month insurance?  
+                             <input type="radio" id="ans1"  name="ans" value="Yes" alt=" Any of the above driver(s), have or had a prior 6 month insurance? Please Choose!" onchange="validatequick('ans')" />Yes
+                             <input type="radio" id="ans2" name="ans" value="No" alt=" Any of the above driver(s), have or had a prior 6 month insurance? Please Choose!"  onchange="validatequick('ans')"/>No
+                        </div>
+                        
+                        <div class="fields">    
+                        	<div class="label">Company</div>  <input id="ansyes" type="text" name="company" alt="Company" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Effective Date</div> <input id="ansyes1" type="text" name="eff_date" alt="Effective Date" />
+						</div>                         
+                        
+                        <h4> Vehical Information</h4>
+                        
+                        <div class="fields">    
+                        	<div class="label">Year</div> <input type="text" class="numeric" name="year" alt="year" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Make</div> <input type="text" name="make" alt="Make" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">VIN # </div> <input type="text" name="vin" alt="VIN #" />
+						</div>                 
+                        <div class="fields">    
+                        	<div class="label">No Air Bag</div><input type="checkbox" name="no_airbag" value="No Air Bag" />
+						</div>                 
+                        <div class="fields">    
+                        	<div class="label">1 Air Bag</div>  <input type="checkbox" name="1airbag" value="1 Air Bag" />
+						</div>  
+                        <div class="fields">    
+                        	<div class="label">Miles on Car</div> <input type="text" name="miles_on_car" alt="Miles on Car" />
+						</div>                                        
+                        <div class="fields">    
+                        	<div class="label">ABS</div><input type="checkbox" name="abs" value="ABS" />
+						</div>                 
+                        <div class="fields">    
+                        	 <div class="label">DRL </div><input type="checkbox" name="drl" value="DRL" />
+						</div>                 
+                        <div class="fields">    
+                        	 <div class="label">Alarm System </div><input type="checkbox" name="alarm"  value="Alarm System" />
+						</div>                 
+                        
+                        <h4> Additional Vehical</h4>
+                        
+                        <div class="fields">    
+                        	<div class="label">Year</div> <input type="text" name="ad_year" class="numeric" alt="Year"  />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">Make</div> <input type="text" name="ad_make" alt="Make" />
+						</div>                         
+                        <div class="fields">    
+                        	<div class="label">VIN #</div>  <input type="text" name="ad_vin"  alt="VIN #" />
+						</div>                 
+                        <div class="fields">    
+                        	<div class="label">No Air Bag</div><input type="checkbox" name="ad_no_airbag" value="No Air bag" />
+						</div>                 
+                        <div class="fields">    
+                        	<div class="label">1 Air Bag </div> <input type="checkbox" name="ad_1airbag" value="1 Air Bag" />
+						</div>  
+                        <div class="fields">    
+                        	<div class="label">Miles on Car </div><input type="text" class="numeric" name="ad_miles_on_car" alt="Miles on Car" />
+						</div>                                        
+                        <div class="fields">    
+                        	<div class="label">ABS</div><input type="checkbox" name="ad_abs" value="ABS" />
+						</div>                 
+                        <div class="fields">    
+                        	<div class="label">DRL</div> <input type="checkbox" name="ad_drl" value="DRL" />
+						</div>                 
+                        <div class="fields">    
+                        	<div class="label">Alarm System</div> <input type="checkbox" name="alarm" value="Alarm System" />
+						</div>
+                        
+                        <h4></h4>
+                        
+                        <div class="fields">
+                        	Additional Comments<br />
+                        	<textarea name="additional_cmt" rows="5" cols="0" class="Additional Comments"></textarea>
+                        </div>
+                        
+                        <div class="btnfield1">
+                            <input type="submit" value="Submit Form"  />
+                            <input type="button" value="Reset Form" onclick="resetForm()" />
+                        </div>
+                        
+                        
+                     </form>
+                </div>
+            </div>
+        </div>
+        
+	   	<!-- Footer -->
+		
+		<div class="footer">		
+        	<div id="footer">
+            	<div class="copyright">1099 French Road  Cheektowaga, NY</div>
+                <div class="footerMenu">
+                	<ul>
+                    	<li><a href="index.html" title="Home">Home</a>|</li>
+                    	<li><a href="insurance.html#homeowner" title="Homeowners">Homeowners</a>|</li>
+                        <li><a href="insurance.html#auto" title="Auto">Auto</a>|</li>
+                        <li><a href="insurance.html#business" title="Business">Business</a>|</li>
+                        <li><a href="insurance.html#life" title="Life">Life</a>|</li>
+                        <li><a href="aboutus.html" title="About Us">About Us</a>|</li>
+                        <li><a href="contactus.html" title="Contact Us">Contact Us</a>|</li>
+                        <li><a href="companies.html" title="Companies">Companies</a>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+	</body>
+	
+</html>
